@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /poc
+
+spring:
+  application:
+    name: poc
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/poc
+    username: postgres
+    password: postgres
